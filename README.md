@@ -5,9 +5,11 @@ Unofficial module for the Household RPG from Two Little Mice. A beautiful game l
 
 ### IMPORTANT: Install Instructions:
 
-1. Install the module using the manifest link below:
+1. Install the module using the manifest link below in your Manifest URL field, in the Install Module section on Foundry VTT:
 
     https://raw.githubusercontent.com/mordachai/household-csb/main/module.json
+
+![image](https://github.com/mordachai/household-csb/assets/662913/8787e7c4-8e27-4508-8ad5-aee5c6f782f3)
 
 2. Create a world with the system Custom System Builder ( https://foundryvtt.com/packages/custom-system-builder ). I call mine Household to make things easy.
 
