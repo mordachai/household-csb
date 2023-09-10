@@ -126,6 +126,17 @@
         "PLAYER": "OBSERVER",
         "ASSISTANT": "OWNER"
       }
+    },
+    {
+      "name": "adventure",
+      "label": "Adventure",
+      "path": "packs/adventure",
+      "type": "Adventure",
+      "ownership": {
+        "PLAYER": "OBSERVER",
+        "ASSISTANT": "OWNER"
+      },
+      "system": "custom-system-builder"
     }
   ],
   "description": "Un-official module for the Household RPG from Two Little Mice. A beautiful game like this deserves a beautiful character sheet.\n\nIMPORTANT:\nThis module uses the Custom System Builder and the only thing you need to do to configure it is go to the Configuration &gt;&gt; Custom System Builder settings and add the CSS used in the correspondent field. Copy and paste the following:\n\nmodules/household-csb/styles/household.css\n\nThat's it. Save it and reload and you are ready to go.",
