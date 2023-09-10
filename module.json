@@ -128,9 +128,9 @@
       }
     }
   ],
-  "description": "Un-official module for the Household RPG from Two Little Mice. A beautiful game like this deserves a beautiful character sheet.\n\nIMPORTANT:\nThis module uses the Custom System Builder and the only thing you need to do to configure it is go to the Configuration &gt;&gt; Custom System Builder settings and add the CSS used in the correspondent field. Copy and paste the following:\n\nmodule/household-csb/styles/household.css\n\nThat's it. Save it and reload and you are ready to go.",
+  "description": "Un-official module for the Household RPG from Two Little Mice. A beautiful game like this deserves a beautiful character sheet.\n\nIMPORTANT:\nThis module uses the Custom System Builder and the only thing you need to do to configure it is go to the Configuration &gt;&gt; Custom System Builder settings and add the CSS used in the correspondent field. Copy and paste the following:\n\nmodules/household-csb/styles/household.css\n\nThat's it. Save it and reload and you are ready to go.",
   "readme": "https://github.com/mordachai/household-csb#readme",
   "url": "https://github.com/mordachai/household-csb",
   "manifest": "https://raw.githubusercontent.com/mordachai/household-csb/main/module.json",
-  "download": "https://github.com/mordachai/household-csb/releases"
+  "download": "https://github.com/mordachai/household-csb/releases/download/v1.0.0/household-csb.zip"
 }
