@@ -21,7 +21,7 @@ Unofficial module for the Household RPG from Two Little Mice. A beautiful game l
 
 That's it. Save it and reload and you are ready to go.
 
-To import everything you need to start go to the Compendiums (1), click on the Adventure compendium (2), click on the Prepare Table adventure (3) and Build Adventure (4) it will populate your table with all the assets that you need.
+To import everything you need to start go to the Compendiums (1), click on the Adventure compendium (2), click on the Prepare Table adventure (3), and **Import Adventure** (4) it will populate your table with all the assets that you need.
 
 ![image](https://github.com/mordachai/household-csb/assets/662913/ae95c61e-c63e-4dc0-9335-2746b1c43aaa)
 
