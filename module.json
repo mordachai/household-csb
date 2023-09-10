@@ -132,5 +132,5 @@
   "readme": "https://github.com/mordachai/household-csb#readme",
   "url": "https://github.com/mordachai/household-csb",
   "manifest": "https://raw.githubusercontent.com/mordachai/household-csb/main/module.json",
-  "download": "https://github.com/mordachai/household-csb/releases"
+  "download": "https://github.com/mordachai/household-csb/releases/download/v1.0.0/household-csb.zip"
 }
