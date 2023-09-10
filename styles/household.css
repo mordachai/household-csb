@@ -1,0 +1,770 @@
+/* Household - Custom System Builder CSS */
+
+@import url('https://fonts.googleapis.com/css2?family=Beau+Rivage&display=swap');
+
+@font-face {
+  font-family: 'LHF_Encore';
+  src: url('/modules/household-csb/fonts/lhf-encore-distressed.ttf');
+}
+
+/*--- Sheet background, header, changes in chat fonts ---*/
+
+.window-app .window-header {
+    flex: 0 0 30px;
+    overflow: hidden;
+    padding: 0 8px;
+    line-height: 30px;
+	border:none;
+    background-image: url(/modules/household-csb/sheet/header_bg.webp);
+	background-repeat: no-repeat;
+ 	background-size: auto;
+	color: #575757;
+	
+}
+
+.sheet .custom-system-actor {
+	background: url(/modules/household-csb/sheet/sheet_bg.webp);
+	background-repeat: no-repeat;
+ 	background-size: auto;
+	color: #3f3f3f;
+}
+
+.chat-message .message-header .message-sender {
+	font-family: 'LHF_Encore', Beau Rivage, cursive;
+	font-size: 1.3rem;
+	font-weight: 600
+}
+
+
+.sheet header{
+	align-items: start !important;
+}
+
+.sheet .custom-system-actor header.sheet-header
+.profile-img-container img{
+	object-fit: cover;
+}
+
+/*-----------------------------------------------------*/
+/* ROLL SCRIPT PART */
+/*-- _og refers to Outgunned, another system of the ---*/
+/*-- same publisher were this css was first used ------*/
+/*-----------------------------------------------------*/
+
+
+.header_og {
+    border-bottom: solid 1px #356978;
+  }
+
+.d6_og_suc {
+	display: inline-block;
+	width: 25px;
+	height: 25px;
+	background-color: #356978;
+	color: white;
+	border: 1px solid black;
+	border-radius: 5px;
+	margin: 3px;
+	text-align: center;
+	line-height: 25px;
+}
+
+.d6_og_rem {
+	display: inline-block;
+	width: 25px;
+	height: 25px;
+	background-color: white;
+	color: black;
+	border: 1px solid black;
+	border-radius: 5px;
+	margin: 3px;
+	text-align: center;
+	line-height: 25px;
+}
+
+.roll-result_og {
+	margin-top: 10px;
+	padding: 10px;
+	padding-top: 10px;
+	border: solid 20px;
+    border-image-source: url(/modules/household-csb/sheet/deco4.svg);
+	border-image-slice: 22 22;
+}
+
+.button_og {
+  display: inline-block;
+  color: white;
+  width: fit-content;
+  background-color: #B1251A;
+  border: none;
+  margin-right:3px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.roll_suc_og {
+	color: #356978;
+	font-size: 18px;
+	margin-left: 20px;
+	font-style: none;
+	text-align: center;
+	font-weight: bold;
+}
+
+.button-container {
+  margin-top: 15px;
+  text-align: center;
+}
+
+.action-button {
+  display: inline-block;
+  margin: 0 5px;
+  padding: 5px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/*------------------------*/
+/* SHEET PART */
+/*------------------------*/
+
+.sheet .hearts-bg {
+	background: url(/modules/household-csb/sheet/hearts_bg.webp);
+	background-repeat: no-repeat;
+ 	background-size: contain;
+}
+
+.sheet .diamonds-bg {
+	background: url(/modules/household-csb/sheet/diamonds_bg.webp);
+	background-repeat: no-repeat;
+ 	background-size: contain;
+}
+
+.sheet .clubs-bg {
+	background: url(/modules/household-csb/sheet/clubs_bg.webp);
+	background-repeat: no-repeat;
+ 	background-size: contain;
+}
+
+.sheet .spades-bg {
+	background: url(/modules/household-csb/sheet/spades_bg.webp);
+	background-repeat: no-repeat;
+ 	background-size: contain;
+}
+
+
+.my-round-border{
+    border: solid 1px  darkolivegreen;
+    border-radius: 5px;
+	text-align: center;
+	padding: 10px;
+	margin: 10px
+}
+
+.dice-text{
+	display: inline-block;
+	width: 18px;
+	height: 18px;
+	background: darkolivegreen;
+	color: white;
+	text-align: center;
+	border: solid 1px rgb(62, 62, 62);
+    border-radius: 3px;
+}
+
+.my-red-text{
+	color: darkred;
+	font-weight: bolder;
+}
+.my-blue-text{
+	color: royalblue;
+	font-weight: bolder;
+}
+.my-green-text{
+	color: darkolivegreen;
+	font-weight: bolder;
+}
+.my-black-text{
+	color: black;
+	font-weight: bolder;
+}
+
+.my-small-text{
+	font-size: normal;
+	text-transform: capitalize;
+}
+
+.my-medium-text{
+	font-size: large;
+	text-transform: capitalize;
+}
+
+.sheet table{
+	background: none;
+	border: none;
+}
+
+.m-1{
+	margin: 1px;
+}
+
+.mx-2{
+	margin-left: 2px;
+	margin-right: 2px;
+}
+
+.my-2{
+	margin-top: 2px;
+	margin-bottom: 2px;
+}
+
+.my-5{
+	margin-top: 5px;
+	margin-bottom: 5px;
+}
+
+.mx-10{
+	margin-left: 10px;
+	margin-right: 10px;
+}
+
+.my-bold{
+	font-weight: bold;
+}
+
+.center-text{
+	text-align:center;
+}
+
+
+.w-100{
+	width:100%;
+}
+
+.w-50{
+	width:50%;
+}
+
+.w-25{
+	max-width:25%;
+}
+
+.w-30{
+	max-width:30%;
+}
+
+.h-small{
+	min-height: 50px;
+}
+
+.my-outline{
+	border: 1px solid black;
+	border-radius: 4px;
+	padding: 2px;
+}
+
+.sheet .no-border input[type="text"]{
+	border:none;
+}
+
+.my-deco1 {
+    text-decoration: none;
+    padding-bottom: 0px;
+    background: url(/modules/household-csb/sheet/deco1.svg);
+	background-size: 350px, auto;
+	background-repeat: no-repeat;
+	background-position: center bottom;
+}
+
+.my-deco2 {
+    text-decoration: none;
+    margin-bottom: 5px;
+    background: url(/modules/household-csb/sheet/deco2.svg);
+	background-size: 250px, auto;
+	background-repeat: no-repeat;
+	background-position: 1px bottom;
+	height: 2.1rem;
+}
+
+.my-deco3 {
+    text-decoration: none;
+	width: 250px;
+    background: url(/modules/household-csb/sheet/deco2.svg);
+	background-size: 200px, auto;
+	background-repeat: no-repeat;
+	background-position: 2px 28px;
+}
+
+.my-title{
+	font-family: 'LHF_Encore', Beau Rivage, cursive;
+	font-size: x-large;
+	line-height: 4rem;
+}
+
+.my-attrib{
+	font-family: 'LHF_Encore', Beau Rivage, cursive;
+	font-size: 2.2em;	
+	text-transform: capitalize;
+	margin-right: -60px;
+	height: 0px;
+}
+
+.my-subtitle1{
+	font-family: 'LHF_Encore', Beau Rivage, cursive;
+	font-size: 2rem;
+	line-height: 110%;
+	font-weight: bold;
+	text-align: center;
+}
+
+.attrib-cb{
+	justify-content:right;
+	margin-right: 50px;
+	transform: scale(1.2);
+}
+
+.attrib-cb2{
+	justify-content: right;
+	transform: scale(1.2);
+}
+
+.my-skill{
+    font-family: Times, "Times New Roman", Georgia, serif;
+	font-size: tiny;
+	text-transform: uppercase;
+	font-weight: 700;
+}
+
+.my-quotes{
+    font-family: Times, "Times New Roman", Georgia, serif;
+	font-style: oblique;
+	font-size: medium;
+}
+
+.my-float-left{
+	margin-left: 0px;
+	padding-bottom: 0px;
+}
+
+.no-icon .custom-system-item-container-image{
+	display: none;
+}
+
+.move-icn a.content-link,
+.equip-icn a.content-link,
+.trait-icn a.content-link {
+	background: none;
+	border: none;
+	font-size:0;
+}
+
+.equip-icn .custom-system-item-container-image {
+    object-fit: contain;
+    max-width: 45px;
+    max-height: 45px;
+    margin-right: 5px;
+    margin-bottom: 2px;
+    vertical-align: middle;
+    border: none;
+	background-color: rgba(0,0,0,0.05);
+	transition: all .3s ease-in-out;
+}
+
+.custom-system-field-root{
+	padding:0px;
+}
+
+.sheet .equip-icn .custom-system-item-container-image:hover {
+	transform: scale(1.4);
+    margin-right: 0px;
+}
+
+.small-text{
+	font-size: small !important;
+}
+
+.large-text{
+	font-size: x-large !important;
+}
+
+.break-word{
+	word-break: break-word !important;
+}
+
+.no-break{
+	word-break: keep-all;
+}
+
+.my-bold{
+	font-family: Times, "Times New Roman", Georgia, serif;
+	font-size: 0.75rem;
+	text-transform: uppercase;
+	font-weight: 600;
+}
+
+.center-text{
+	text-align: center;
+}
+
+.trait-title{
+	font-family: Times, "Times New Roman", Georgia, serif;
+	font-size: normal;
+	line-height: 1.2rem;
+	text-transform: uppercase;
+	font-weight: bold;
+	text-decoration: 2px underline #782e22;
+	text-underline-offset: 3px;
+}
+
+.trait-text{
+	font-family: Times, "Times New Roman", Georgia, serif;
+	font-size: normal;
+	text-align: justify;
+	padding-left: 10px;
+	padding-right: 10px;
+}
+
+.boxes .custom-system-component-root {
+    margin-left: 0px;
+	flex-basis: 0px;
+}
+
+
+/*------------------------*/
+/* CHECKBOXES VOODOO PART */
+/*------------------------*/
+
+.sheet .eye input[type="checkbox"] {
+    -webkit-appearance: initial;
+    appearance: initial;
+    background: url(/modules/household-csb/sheet/eye.svg);
+	flex: 0 0 16px;
+    width: 16px;
+    height: 16px;
+    cursor: pointer;
+}
+
+.sheet .eye input[type="checkbox"]:checked {
+    background: url(/modules/household-csb/sheet/eye-slash.svg) !important;
+    -webkit-filter: none !important;
+}
+
+.sheet .aces-panel{
+	min-width: 316px;
+	min-height:6em;
+}
+
+.sheet input[type="text"], select{
+	border: none;
+	border-bottom: 1px solid gray;
+	background: none;
+}
+
+.sheet .hearts input[type="checkbox"] {
+    -webkit-appearance: initial;
+    appearance: initial;
+    background: url(/modules/household-csb/sheet/hearts.svg);
+	flex: 0 0 18px;
+    width: 18px;
+    height: 18px;
+    cursor: pointer;
+}
+
+.sheet .hearts input[type="checkbox"]:checked {
+    background: url(/modules/household-csb/sheet/hearts-filled.svg) !important;
+    -webkit-filter: none !important;
+}
+
+.sheet .diamonds input[type="checkbox"] {
+    -webkit-appearance: initial;
+    appearance: initial;
+    background: url(/modules/household-csb/sheet/diamonds.svg);
+	flex: 0 0 18px;
+    width: 18px;
+    height: 18px;
+    cursor: pointer;
+}
+
+.sheet .diamonds input[type="checkbox"]:checked {
+    background: url(/modules/household-csb/sheet/diamonds-filled.svg) !important;
+    -webkit-filter: none !important;
+}
+
+.sheet .clubs input[type="checkbox"] {
+    -webkit-appearance: initial;
+    appearance: initial;
+    background: url(/modules/household-csb/sheet/clubs.svg);
+	flex: 0 0 18px;
+    width: 18px;
+    height: 18px;
+    cursor: pointer;
+}
+
+.sheet .clubs input[type="checkbox"]:checked {
+    background: url(/modules/household-csb/sheet/clubs-filled.svg) !important;
+    -webkit-filter: none !important;
+}
+
+.sheet .spades input[type="checkbox"] {
+    -webkit-appearance: initial;
+    appearance: initial;
+    background: url(/modules/household-csb/sheet/spades.svg);
+	background-repeat: no-repeat !important;
+	background-size: cover !important;
+	flex: 0 0 18px;
+    width: 18px;
+    height: 18px;
+    cursor: pointer;
+}
+
+.sheet .spades input[type="checkbox"]:checked {
+    background: url(/modules/household-csb/sheet/spades-filled.svg) !important;
+    -webkit-filter: none !important;
+	background-repeat: no-repeat !important;
+	background-size: cover !important;
+}
+
+.sheet .decorum input[type="checkbox"] {
+    -webkit-appearance: initial;
+    appearance: initial;
+    background: url(/modules/household-csb/sheet/butterfly.svg);
+	background-repeat: no-repeat !important;
+	background-size: cover !important;
+	flex: 0 0 27px;
+    width: 27px;
+    height: 22px;
+    cursor: pointer;
+	transform: scale(1.4);
+}
+
+.sheet .decorum input[type="checkbox"]:checked {
+    background: url(/modules/household-csb/sheet/butterfly-filled.svg) !important;
+    -webkit-filter: none !important;
+	background-repeat: no-repeat !important;
+	background-size: cover !important;
+}
+
+.sheet .stress1 input[type="checkbox"] {
+    -webkit-appearance: initial;
+    appearance: initial;
+    background: url(/modules/household-csb/sheet/stress_special.svg);
+	background-repeat: no-repeat !important;
+	background-size: cover !important;
+	flex: 0 0 20px;
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+	transform: scale(1.2);
+}
+
+.sheet .stress1 input[type="checkbox"]:checked {
+    background: url(/modules/household-csb/sheet/stress_special-filled.svg) !important;
+    -webkit-filter: none !important;
+	background-repeat: no-repeat !important;
+	background-size: cover !important;
+}
+
+.sheet .ace-hearts input[type="checkbox"] {
+    -webkit-appearance: initial;
+    appearance: initial;
+    background: url(/modules/household-csb/sheet/ace-hearts.svg);
+	background-repeat: no-repeat !important;
+	background-size: cover !important;
+	flex: 0 0 43px;
+    width: 43px;
+    height: 60px;
+    cursor: pointer;
+	transform: translate(50px,14px) rotate(-20deg);
+}
+
+.sheet .ace-hearts input[type="checkbox"]:checked {
+    background: url(/modules/household-csb/sheet/ace-hearts-filled.svg) !important;
+    -webkit-filter: none !important;
+	background-repeat: no-repeat !important;
+	background-size: cover !important;
+}
+
+.sheet .ace-diamonds input[type="checkbox"] {
+    -webkit-appearance: initial;
+    appearance: initial;
+    background: url(/modules/household-csb/sheet/ace-diamonds.svg);
+	background-repeat: no-repeat !important;
+	background-size: cover !important;
+	flex: 0 0 43px;
+    width: 43px;
+    height: 60px;
+    cursor: pointer;
+	transform: translate(25px,4px) rotate(-10deg);
+}
+
+.sheet .ace-diamonds input[type="checkbox"]:checked {
+    background: url(/modules/household-csb/sheet/ace-diamonds-filled.svg) !important;
+    -webkit-filter: none !important;
+	background-repeat: no-repeat !important;
+	background-size: cover !important;
+}
+
+.sheet .ace-clubs input[type="checkbox"] {
+    -webkit-appearance: initial;
+    appearance: initial;
+    background: url(/modules/household-csb/sheet/ace-clubs.svg);
+	background-repeat: no-repeat !important;
+	background-size: cover !important;
+	flex: 0 0 43px;
+    width: 43px;
+    height: 60px;
+    cursor: pointer;
+}
+
+.sheet .ace-clubs input[type="checkbox"]:checked {
+    background: url(/modules/household-csb/sheet/ace-clubs-filled.svg) !important;
+    -webkit-filter: none !important;
+	background-repeat: no-repeat !important;
+	background-size: cover !important;
+}
+
+.sheet .ace-spades input[type="checkbox"] {
+    -webkit-appearance: initial;
+    appearance: initial;
+    background: url(/modules/household-csb/sheet/ace-spades.svg);
+	background-repeat: no-repeat !important;
+	background-size: cover !important;
+	flex: 0 0 43px;
+    width: 43px;
+    height: 60px;
+    cursor: pointer;
+	transform: translate(-25px,4px) rotate(10deg);
+	
+}
+
+.sheet .ace-spades input[type="checkbox"]:checked {
+    background: url(/modules/household-csb/sheet/ace-spades-filled.svg) !important;
+    -webkit-filter: none !important;
+	background-repeat: no-repeat !important;
+	background-size: cover !important;
+}
+
+.sheet .ace-joker input[type="checkbox"] {
+    -webkit-appearance: initial;
+    appearance: initial;
+    background: url(/modules/household-csb/sheet/ace-joker.svg);
+	background-repeat: no-repeat !important;
+	background-size: cover !important;
+	flex: 0 0 43px;
+    width: 43px;
+    height: 60px;
+    cursor: pointer;
+	transform: translate(-50px,14px) rotate(20deg);
+}
+
+.sheet .ace-joker input[type="checkbox"]:checked {
+    background: url(/modules/household-csb/sheet/ace-joker-filled.svg) !important;
+    -webkit-filter: none !important;
+	background-repeat: no-repeat !important;
+	background-size: cover !important;
+}
+
+.sheet .charname input[type="text"], .itemname input[type="text"]{
+	font-family: 'LHF_Encore', Beau Rivage, cursive;
+	font-weight: bold;
+	border: none;
+}
+
+.sheet .circle-cb input[type="checkbox"] {
+    -webkit-appearance: initial;
+    appearance: initial;
+    background: #fff;
+    flex: 0 0 18px;
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    outline: 1px solid #3f3f3f;
+    cursor: pointer;
+}
+
+.sheet .circle-cb input[type="checkbox"]:checked {
+    background: #83739A !important;
+	outline: 2px solid #3f3f3f !important;
+    -webkit-filter: none !important;
+}
+
+.sheet .ttt1 input[type="checkbox"] {
+    -webkit-appearance: initial;
+    appearance: initial;
+    background: url(/modules/household-csb/sheet/ttt1.svg);
+	flex: 0 0 22px;
+    width: 22px;
+    height: 22px;
+    cursor: pointer;
+}
+
+.sheet .ttt1 input[type="checkbox"]:checked {
+    background: url(/modules/household-csb/sheet/ttt1-filled.svg) !important;
+    -webkit-filter: none !important;
+}
+
+.sheet .ttt2 input[type="checkbox"] {
+    -webkit-appearance: initial;
+    appearance: initial;
+    background: url(/modules/household-csb/sheet/ttt2.svg);
+	flex: 0 0 22px;
+    width: 22px;
+    height: 22px;
+    cursor: pointer;
+}
+
+.sheet .ttt2 input[type="checkbox"]:checked {
+    background: url(/modules/household-csb/sheet/ttt2-filled.svg) !important;
+    -webkit-filter: none !important;
+}
+
+.sheet .ttt3 input[type="checkbox"] {
+    -webkit-appearance: initial;
+    appearance: initial;
+    background: url(/modules/household-csb/sheet/ttt3.svg);
+	flex: 0 0 22px;
+    width: 22px;
+    height: 22px;
+    cursor: pointer;
+}
+
+.sheet .ttt3 input[type="checkbox"]:checked {
+    background: url(/modules/household-csb/sheet/ttt3-filled.svg) !important;
+    -webkit-filter: none !important;
+}
+
+.sheet .ttt4 input[type="checkbox"] {
+    -webkit-appearance: initial;
+    appearance: initial;
+    background: url(/modules/household-csb/sheet/ttt4.svg);
+	flex: 0 0 22px;
+    width: 22px;
+    height: 22px;
+    cursor: pointer;
+}
+
+.sheet .ttt4 input[type="checkbox"]:checked {
+    background: url(/modules/household-csb/sheet/ttt4-filled.svg) !important;
+    -webkit-filter: none !important;
+}
+
+.sheet .ttt5 input[type="checkbox"] {
+    -webkit-appearance: initial;
+    appearance: initial;
+    background: url(/modules/household-csb/sheet/ttt5.svg);
+	flex: 0 0 22px;
+    width: 22px;
+    height: 22px;
+    cursor: pointer;
+}
+
+.sheet .ttt5 input[type="checkbox"]:checked {
+    background: url(/modules/household-csb/sheet/ttt5-filled.svg) !important;
+    -webkit-filter: none !important;
+}
+
+.custom-system-actor .editor{
+	min-height: 10px;
+}

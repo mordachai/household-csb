@@ -1,0 +1,13 @@
+{
+  "name": "{{trait_name}}",
+  "type": "equippableItem",
+  "img": "{{image}}",
+  "system": {
+    "template": "mVNOqwlB0Spi3vsr",
+    "props": {
+      "name": "{{trait_name}}",
+      "trait_profession": "{{trait_profession}}",
+      "trait_desc": "{{trait_desc}}"
+    }
+ }
+}
