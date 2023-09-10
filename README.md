@@ -5,9 +5,13 @@ Unofficial module for the Household RPG from Two Little Mice. A beautiful game l
 
 ### IMPORTANT: Install Instructions:
 
-First of all: Create a world with the system Custom System Builder ( https://foundryvtt.com/packages/custom-system-builder ). I call mine Household to make things easy.
+1. Install the module using the manifest link below:
 
-After activating the module in your world created with Custom System Builder go directly to the Configuration Options (gears icon) >> Custom System Builder settings and add the CSS used in the correspondent field. Copy and paste the following:
+    https://raw.githubusercontent.com/mordachai/household-csb/main/module.json
+
+2. Create a world with the system Custom System Builder ( https://foundryvtt.com/packages/custom-system-builder ). I call mine Household to make things easy.
+
+3. After activating the module in your world created with Custom System Builder go directly to the Configuration Options (gears icon) >> Custom System Builder settings and add the CSS used in the correspondent field. Copy and paste the following:
 
     modules/household-csb/styles/household.css
 
