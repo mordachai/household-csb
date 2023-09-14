@@ -130,28 +130,39 @@
 /* SHEET PART */
 /*------------------------*/
 
+.sheet .attributes-bg {
+	background: url(/modules/household-csb/sheet/attributes-bg.webp);
+	background-repeat: no-repeat;
+ 	background-size: contain;
+	background-position: left 10px;
+}
+
 .sheet .hearts-bg {
 	background: url(/modules/household-csb/sheet/hearts_bg.webp);
 	background-repeat: no-repeat;
- 	background-size: contain;
+ 	background-size: cover;
+	background-position: 1px top;
 }
 
 .sheet .diamonds-bg {
 	background: url(/modules/household-csb/sheet/diamonds_bg.webp);
 	background-repeat: no-repeat;
  	background-size: contain;
+	background-position: 1px bottom;
 }
 
 .sheet .clubs-bg {
 	background: url(/modules/household-csb/sheet/clubs_bg.webp);
 	background-repeat: no-repeat;
  	background-size: contain;
+	background-position: 1px bottom;
 }
 
 .sheet .spades-bg {
 	background: url(/modules/household-csb/sheet/spades_bg.webp);
 	background-repeat: no-repeat;
  	background-size: contain;
+	background-position: 1px bottom;	
 }
 
 
@@ -248,11 +259,14 @@
 }
 
 .w-25{
-	max-width:25%;
+	width:250px;
+	max-width:255px;
+	gap: 0px;
+	margin:0px;
 }
 
-.w-30{
-	max-width:30%;
+.main-columns{
+	gap:40px;
 }
 
 .h-small{
@@ -305,30 +319,29 @@
 
 .my-attrib{
 	font-family: 'LHF_Encore', Beau Rivage, cursive;
-	font-size: 2.2em;	
+	font-size: 2.0em;
 	text-transform: capitalize;
-	margin-right: -60px;
-	height: 0px;
+	height: 40px;
+    background-image: url(/modules/household-csb/sheet/deco2.svg);
+	background-size: 180px, auto;
+    background-repeat: no-repeat;
+    background-position: left bottom;
+	position: relative;
+	top: 0px; left: 5px;
 }
 
 .my-subtitle1{
 	font-family: 'LHF_Encore', Beau Rivage, cursive;
-	font-size: 2rem;
+	font-size: 1.4rem;
 	line-height: 110%;
 	font-weight: bold;
 	text-align: center;
 }
 
 .attrib-cb{
-	justify-content:right;
-	margin-right: 50px;
-	transform: scale(1.2);
+	transform: scale(1.4);
 }
 
-.attrib-cb2{
-	justify-content: right;
-	transform: scale(1.2);
-}
 
 .my-skill{
     font-family: Times, "Times New Roman", Georgia, serif;
@@ -374,6 +387,12 @@
 
 .custom-system-field-root{
 	padding:0px;
+}
+
+
+.flex-group-left > .custom-system-field {
+    justify-content: flex-end;
+    text-align: right;
 }
 
 .sheet .equip-icn .custom-system-item-container-image:hover {
