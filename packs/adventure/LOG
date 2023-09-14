@@ -1,14 +1,3 @@
-2023/09/10-23:01:16.189 2038 Recovering log #13
-2023/09/10-23:01:16.191 2038 Delete type=0 #13
-2023/09/10-23:01:16.191 2038 Delete type=3 #11
-2023/09/10-23:32:24.046 575c Level-0 table #19: started
-2023/09/10-23:32:24.052 575c Level-0 table #19: 415281 bytes OK
-2023/09/10-23:32:24.053 575c Delete type=0 #17
-2023/09/10-23:32:24.054 575c Manual compaction at level-0 from '!adventures!JUoHf8MzU9ohYaE1' @ 72057594037927935 : 1 .. '!adventures!JUoHf8MzU9ohYaE1' @ 0 : 0; will stop at '!adventures!JUoHf8MzU9ohYaE1' @ 10 : 1
-2023/09/10-23:32:24.054 575c Compacting 1@0 + 1@1 files
-2023/09/10-23:32:24.058 575c Generated table #20@0: 1 keys, 209157 bytes
-2023/09/10-23:32:24.058 575c Compacted 1@0 + 1@1 files => 209157 bytes
-2023/09/10-23:32:24.059 575c compacted to: files[ 0 1 0 0 0 0 0 ]
-2023/09/10-23:32:24.059 575c Delete type=2 #15
-2023/09/10-23:32:24.059 575c Delete type=2 #19
-2023/09/10-23:32:24.060 575c Manual compaction at level-0 from '!adventures!JUoHf8MzU9ohYaE1' @ 10 : 1 .. '!adventures!JUoHf8MzU9ohYaE1' @ 0 : 0; will stop at (end)
+2023/09/15-01:28:46.730 5b3c Recovering log #26
+2023/09/15-01:28:46.734 5b3c Delete type=0 #26
+2023/09/15-01:28:46.734 5b3c Delete type=3 #25
