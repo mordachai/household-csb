@@ -9,6 +9,12 @@
 
 /*--- Sheet background, header, changes in chat fonts ---*/
 
+.grid-attrib{
+	display: grid;
+	grid-template-columns: 40px 50px 25px 25px 25px 25px;
+	grid-template-rows: auto auto auto auto auto;
+}
+
 .window-app .window-header {
     flex: 0 0 30px;
     overflow: hidden;
@@ -17,7 +23,7 @@
 	border:none;
     background-image: url(/modules/household-csb/sheet/header_bg.webp);
 	background-repeat: no-repeat;
- 	background-size: auto;
+ 	background-size: cover;
 	color: #575757;
 	
 }
@@ -25,7 +31,7 @@
 .sheet .custom-system-actor {
 	background: url(/modules/household-csb/sheet/sheet_bg.webp);
 	background-repeat: no-repeat;
- 	background-size: auto;
+ 	background-size: cover;
 	color: #3f3f3f;
 }
 
@@ -138,30 +144,30 @@
 }
 
 .sheet .hearts-bg {
-	background: url(/modules/household-csb/sheet/hearts_bg.webp);
+	background: url(/modules/household-csb/sheet/hearts2_bg.webp);
 	background-repeat: no-repeat;
- 	background-size: cover;
-	background-position: 1px top;
+ 	background-size: auto 140px;
+	background-position: 1px bottom;
 }
 
 .sheet .diamonds-bg {
-	background: url(/modules/household-csb/sheet/diamonds_bg.webp);
+	background: url(/modules/household-csb/sheet/diamonds2_bg.webp);
 	background-repeat: no-repeat;
- 	background-size: contain;
+ 	background-size: auto 140px;
 	background-position: 1px bottom;
 }
 
 .sheet .clubs-bg {
-	background: url(/modules/household-csb/sheet/clubs_bg.webp);
+	background: url(/modules/household-csb/sheet/clubs2_bg.webp);
 	background-repeat: no-repeat;
- 	background-size: contain;
+ 	background-size: auto 140px;
 	background-position: 1px bottom;
 }
 
 .sheet .spades-bg {
-	background: url(/modules/household-csb/sheet/spades_bg.webp);
+	background: url(/modules/household-csb/sheet/spades2_bg.webp);
 	background-repeat: no-repeat;
- 	background-size: contain;
+ 	background-size: auto 140px;
 	background-position: 1px bottom;	
 }
 
@@ -259,14 +265,19 @@
 }
 
 .w-25{
-	width:250px;
-	max-width:255px;
+	width:210px;
+	max-width:215px;
 	gap: 0px;
 	margin:0px;
 }
 
+
+.w-65{
+	width: 315px;
+}
+
 .main-columns{
-	gap:40px;
+	gap:25px;
 }
 
 .h-small{
@@ -292,14 +303,15 @@
 	background-position: center bottom;
 }
 
-.my-deco2 {
+ .my-deco2 {
     text-decoration: none;
-    margin-bottom: 5px;
-    background: url(/modules/household-csb/sheet/deco2.svg);
-	background-size: 250px, auto;
-	background-repeat: no-repeat;
-	background-position: 1px bottom;
-	height: 2.1rem;
+	grid-column: 1 / span 6;
+	background-image: url(/modules/household-csb/sheet/deco2.svg);
+	background-size: 200px, auto;
+    background-repeat: no-repeat;
+    background-position: left top;
+	height: 16px;
+	width: 100%;
 }
 
 .my-deco3 {
@@ -320,14 +332,12 @@
 .my-attrib{
 	font-family: 'LHF_Encore', Beau Rivage, cursive;
 	font-size: 2.0em;
+	font-weight: 500;
 	text-transform: capitalize;
-	height: 40px;
-    background-image: url(/modules/household-csb/sheet/deco2.svg);
-	background-size: 180px, auto;
-    background-repeat: no-repeat;
-    background-position: left bottom;
-	position: relative;
-	top: 0px; left: 5px;
+	grid-column: 1 / span 3;
+	margin-right: 10px;
+	margin-bottom: -5px;
+	align-items: end;
 }
 
 .my-subtitle1{
@@ -339,15 +349,17 @@
 }
 
 .attrib-cb{
-	transform: scale(1.4);
+	transform: scale(1.2);
+	align-items: end;
 }
-
 
 .my-skill{
     font-family: Times, "Times New Roman", Georgia, serif;
-	font-size: tiny;
+	font-size: small;
+	grid-column: 1 / span 2;
 	text-transform: uppercase;
 	font-weight: 700;
+	margin-right: 5px;
 }
 
 .my-quotes{
@@ -389,11 +401,6 @@
 	padding:0px;
 }
 
-
-.flex-group-left > .custom-system-field {
-    justify-content: flex-end;
-    text-align: right;
-}
 
 .sheet .equip-icn .custom-system-item-container-image:hover {
 	transform: scale(1.4);
@@ -541,8 +548,6 @@
 .sheet .spades input[type="checkbox"]:checked {
     background: url(/modules/household-csb/sheet/spades-filled.svg) !important;
     -webkit-filter: none !important;
-	background-repeat: no-repeat !important;
-	background-size: cover !important;
 }
 
 .sheet .decorum input[type="checkbox"] {

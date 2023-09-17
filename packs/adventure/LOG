@@ -1,3 +1,9 @@
-2023/09/15-01:28:46.730 5b3c Recovering log #26
-2023/09/15-01:28:46.734 5b3c Delete type=0 #26
-2023/09/15-01:28:46.734 5b3c Delete type=3 #25
+2023/09/17-12:21:48.769 4abc Recovering log #31
+2023/09/17-12:21:48.772 4abc Delete type=0 #31
+2023/09/17-12:21:48.772 4abc Delete type=3 #29
+2023/09/17-13:16:24.514 23d0 Compacting 1@0 + 1@1 files
+2023/09/17-13:16:24.528 23d0 Generated table #34@0: 1 keys, 201670 bytes
+2023/09/17-13:16:24.528 23d0 Compacted 1@0 + 1@1 files => 201670 bytes
+2023/09/17-13:16:24.531 23d0 compacted to: files[ 0 1 0 0 0 0 0 ]
+2023/09/17-13:16:24.531 23d0 Delete type=2 #20
+2023/09/17-13:16:24.531 23d0 Delete type=2 #30
