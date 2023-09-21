@@ -15,6 +15,10 @@
 	grid-template-rows: auto auto auto auto auto;
 }
 
+.sheet {
+	min-width: 380px;
+}
+
 .window-app .window-header {
     flex: 0 0 30px;
     overflow: hidden;
@@ -25,7 +29,10 @@
 	background-repeat: no-repeat;
  	background-size: cover;
 	color: #575757;
-	
+}
+
+.sheet .custom-system-panel{
+	margin: 0px;
 }
 
 .sheet .custom-system-actor {
@@ -38,25 +45,187 @@
 .chat-message .message-header .message-sender {
 	font-family: 'LHF_Encore', Beau Rivage, cursive;
 	font-size: 1.3rem;
-	font-weight: 600
+	font-weight: 600;
 }
-
 
 .sheet header{
 	align-items: start !important;
 }
 
-.sheet .custom-system-actor header.sheet-header
-.profile-img-container img{
-	object-fit: cover;
+.custom-system-template-select{
+	position: relative;
+	top:-50px;
 }
 
-/*-----------------------------------------------------*/
-/* ROLL SCRIPT PART */
-/*-- _og refers to Outgunned, another system of the ---*/
-/*-- same publisher were this css was first used ------*/
-/*-----------------------------------------------------*/
+ .sheet .custom-system-actor header.sheet-header .profile-img-container img{
+	object-fit: cover;
+	object-position: center top;
+}
 
+/* --- Char info grid --- */
+
+.grid-char{
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr;
+	gap: 2px 2px;
+}
+
+.item-left{
+	grid-column: 1 / span 2;
+}
+
+.item-right{
+	grid-column: 3 / span 2;
+}
+
+.item-right1{
+	grid-column: 3 / span 1;
+}
+.item-right2{
+	grid-column: 4 / span 1;
+}
+
+/* --- Decorum grid --- */
+.grid-decorum{
+	display: grid;
+	width: 100%;
+	grid-template-columns: 20% 20% 20% 20% 20%;
+	grid-template-rows: auto auto;
+	justify-content: space-around;
+	align-content: space-evenly;
+	justify-items: center;
+	gap: 5px 2px;
+}
+
+.grid-decorum div{
+	text-align: center;
+}
+
+
+
+/* --- Stress grid --- */
+.grid-stress{
+	display: grid;
+	width: 100%;
+	grid-template-columns: 20px 20px 20px 20px 20px 20px 20px 20px 20px 20px 20px 20px;
+	gap: 6px;
+}
+
+
+/* --- Equipment: show as lines --- */
+.grid-equip {
+	text-align: justify;
+	
+}
+
+.grid-equip .custom-system-dynamicRow{
+   display: grid;
+   grid-template-columns: 42px auto 60px;
+   grid-template-rows: 25px auto auto;
+   width: 98%;
+   height: auto;
+   gap: 0px 2px;
+   border-bottom: 1px solid black;
+}
+
+.grid-equip div{
+   font-family: 'Times New Roman', Times, serif;
+   text-align: justify;
+}
+
+.move-icn a.content-link,
+.grid-equip a.content-link,
+.trait-icn a.content-link {
+   background: none;
+   border: none;
+   font-size: 0;
+}
+
+.grid-equip .custom-system-item-container-image {
+   object-fit: contain;
+   max-width: 42px;
+   max-height: 42px;
+   border: 1px solid black;
+   border-radius: 6px;
+}
+
+.grid-equip .equip-label{
+	font-size: 1.0rem;
+   	font-weight: bolder;
+  	margin-left: 10px;
+   	margin-top: 5px;
+   	width: auto;
+}
+
+.equip-trait{
+   width: 100%;
+   font-size: 0.85rem;
+   font-style: oblique;
+   font-weight: bold;
+}
+
+.equip-desc{
+	width: 100%;
+}
+
+.equip-price{
+   font-size: large;
+   text-align: left;
+}
+
+.equip-price::before{
+   content: '$';
+}
+
+.grid-equip .fa-trash::before{
+	display:block;
+	margin-left: 50px;
+	margin-bottom: -50px;
+	
+}
+
+/* --- Conditions --- */
+
+.cond-grid{
+	display: grid;
+	grid-template-columns: 1fr 30px 30px 1fr;
+	width: 100%;
+}
+
+.cond-textfield{
+	grid-column: 1 / span 4;
+}
+
+/* --- Contracts --- */
+.grid-contracts{
+	display: grid;
+	width: 100%;
+	grid-template-columns: auto 1fr;
+}
+
+.grid-contracts div{
+	text-align: justify;
+}
+
+.grid-contracts-cb{
+	grid-column: 1 / span 1;
+}
+
+.grid-contracts-title{
+	grid-column: 2 / span 1;
+}
+
+.grid-contracts-text{
+	grid-column: 1 / span 2;
+}
+
+
+
+/*---------------------------------------*/
+/* ROLL SCRIPT PART */
+/*_og refers to Outgunned, another system of the*/
+/*same publisher were this css was first used */
+/*---------------------------------------*/
 
 .header_og {
     border-bottom: solid 1px #356978;
@@ -171,7 +340,6 @@
 	background-position: 1px bottom;	
 }
 
-
 .my-round-border{
     border: solid 1px  darkolivegreen;
     border-radius: 5px;
@@ -255,7 +423,6 @@
 	text-align:center;
 }
 
-
 .w-100{
 	width:100%;
 }
@@ -270,7 +437,6 @@
 	gap: 0px;
 	margin:0px;
 }
-
 
 .w-65{
 	width: 315px;
@@ -325,7 +491,7 @@
 
 .my-title{
 	font-family: 'LHF_Encore', Beau Rivage, cursive;
-	font-size: x-large;
+	font-size: 1.35rem;
 	line-height: 4rem;
 }
 
@@ -373,38 +539,8 @@
 	padding-bottom: 0px;
 }
 
-.no-icon .custom-system-item-container-image{
-	display: none;
-}
-
-.move-icn a.content-link,
-.equip-icn a.content-link,
-.trait-icn a.content-link {
-	background: none;
-	border: none;
-	font-size:0;
-}
-
-.equip-icn .custom-system-item-container-image {
-    object-fit: contain;
-    max-width: 45px;
-    max-height: 45px;
-    margin-right: 5px;
-    margin-bottom: 2px;
-    vertical-align: middle;
-    border: none;
-	background-color: rgba(0,0,0,0.05);
-	transition: all .3s ease-in-out;
-}
-
 .custom-system-field-root{
 	padding:0px;
-}
-
-
-.sheet .equip-icn .custom-system-item-container-image:hover {
-	transform: scale(1.4);
-    margin-right: 0px;
 }
 
 .small-text{
