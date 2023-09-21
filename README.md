@@ -3,6 +3,8 @@
 
 Unofficial module for the Household RPG from Two Little Mice. A beautiful game like this deserves a beautiful character sheet.
 
+![image](https://github.com/mordachai/household-csb/assets/662913/0da87a47-db51-4e0b-b3cc-d030782c3812)
+
 ### IMPORTANT: Install Instructions:
 
 1. Install the module using the manifest link below in your Manifest URL field, in the Install Module section on Foundry VTT:
