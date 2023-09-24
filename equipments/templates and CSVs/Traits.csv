@@ -1,4 +1,4 @@
-trait_name,trait_profession,trait_desc,image
+trait_name,trait_type,trait_desc,image
 Acrobat,Common Trait,"<strong>Acrobat: </strong>Gain a Free Re-roll when performing acrobatics, or breaking a fall.",icons/sundries/gaming/dice-pair-white-green.webp
 Alert,Common Trait,"<strong>Alert: </strong>Gain a Free Re-Roll to avoid an ambush or a danger, or when you try to locate enemies.",icons/sundries/gaming/dice-pair-white-green.webp
 Beastmaster,Common Trait,"<strong>Beastmaster: </strong>Gain a Free Re-roll for all Action or Reaction Rolls made in combat against Large, Huge, or Giant beasts.",icons/sundries/gaming/dice-pair-white-green.webp

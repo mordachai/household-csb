@@ -3,7 +3,7 @@
   "type": "character",
   "img": "icons/creatures/magical/spirit-fear-energy-pink.webp",
   "system": {
-    "template": "0B1tCPcJfqDmHOiN",
+    "template": "iDvP0kgoDvDBEFZQ",
     "props": {
       "Oponnent_level_label": "{{opponent_level}}",
       "threatLevel": {{level}},

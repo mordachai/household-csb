@@ -7,13 +7,12 @@
   src: url('/modules/household-csb/fonts/lhf-encore-distressed.ttf');
 }
 
-/*--- Sheet background, header, changes in chat fonts ---*/
+.opponent-grid{
 
-.grid-attrib{
-	display: grid;
-	grid-template-columns: 40px 50px 25px 25px 25px 25px;
-	grid-template-rows: auto auto auto auto auto;
 }
+
+
+/*--- Sheet background, header, changes in chat fonts ---*/
 
 .sheet {
 	min-width: 380px;
@@ -66,8 +65,8 @@
 
 .grid-char{
 	display: grid;
-	grid-template-columns: 1fr 1fr 1fr 1fr;
-	gap: 2px 2px;
+	grid-template-columns: 25% 25% 25% 25%;
+	gap: 3px 2px;
 }
 
 .item-left{
@@ -85,12 +84,27 @@
 	grid-column: 4 / span 1;
 }
 
+.item-across{
+	grid-column: 1 / span 4;
+}
+
+/* --- Attributes grid --- */
+
+.grid-attrib{
+	display: grid;
+	grid-template-columns: 40px 50px 25px 25px 25px 25px;
+	grid-template-rows: auto auto auto auto auto;
+}
+
 /* --- Decorum grid --- */
 .grid-decorum{
 	display: grid;
 	width: 100%;
+	height: 70px;
+	margin: auto;
 	grid-template-columns: 20% 20% 20% 20% 20%;
 	grid-template-rows: auto auto;
+	align-items: center;
 	justify-content: space-around;
 	align-content: space-evenly;
 	justify-items: center;
@@ -101,98 +115,212 @@
 	text-align: center;
 }
 
+/* --- Clean Icon and Title in containers ---*/
+
+.grid-move a.content-link,
+.grid-equip a.content-link,
+.grid-trait a.content-link {
+   background: none;
+   border: none;
+   font-size: 0;
+}
+
+/* --- Traits grid --- */
+
+.grid-trait .custom-system-dynamicRow{
+	display: grid;
+	grid-template-columns: 30px auto 15px;
+	grid-template-rows: auto;
+   	width: 98%;
+  	height: auto;
+  	gap: 5px 5px;
+	margin-bottom: 5px;
+	border-width: 0 0 1px 0;
+	border-color: #404040;
+	border-style: solid;
+}
+
+.grid-trait .custom-system-dynamicRow:last-child {
+	border-width: 0 0 0 0;
+}
+
+.grid-trait .custom-system-item-container-image {
+	position: relative;
+	object-fit: contain;
+	padding: 0px;
+	margin: 0px;
+	max-width: 30px;
+	max-height: 30px;
+	border-radius: 4px;
+	vertical-align: top;
+}
+
+.grid-trait .fa-trash{
+	display:block;
+	position: relative;
+	top: 5px;
+}
 
 
 /* --- Stress grid --- */
 .grid-stress{
 	display: grid;
 	width: 100%;
+	height: 50px;
 	grid-template-columns: 20px 20px 20px 20px 20px 20px 20px 20px 20px 20px 20px 20px;
-	gap: 6px;
+	justify-content: space-around;
+	align-content: center;
 }
 
+.grid-stressOppo{
+	display: grid;
+	width: 100%;
+	height: 50px;
+	grid-template-columns: 20px 20px 20px 20px 20px 20px 20px 20px 20px 20px 20px 20px 20px 20px 20px;
+	justify-content: space-around;
+	align-content:end;
+}
+
+/* --- Conditions --- */
+.cond-grid{
+	display: grid;
+	align-content: center;
+	grid-template-columns: 1fr 30px 30px 1fr;
+	width: 100%;
+	height: 180px;
+}
+
+.cond-textfield{
+	grid-column: 1 / span 4;
+}
+
+/* --- Moves --- */
+.grid-move .custom-system-dynamicRow{
+	display: grid;
+	grid-template-columns: 30px 15px auto 15px;
+	grid-template-rows: auto;
+   	width: 98%;
+  	height: auto;
+  	gap: 5px 5px;
+	margin-bottom: 5px;
+	border-width: 0 0 1px 0;
+	border-color: #404040;
+	border-style: solid;
+}
+
+.grid-move .custom-system-dynamicRow:last-child {
+	border-width: 0 0 0 0;
+}
+
+.grid-move .custom-system-item-container-image {
+	position: relative;
+	object-fit: contain;
+	padding: 0px;
+	margin: 0px;
+	max-width: 30px;
+	max-height: 30px;
+	border-radius: 4px;
+	vertical-align: top;
+}
+
+.grid-move .fa-trash{
+	display:block;
+	position: relative;
+	top: 5px;
+}
 
 /* --- Equipment: show as lines --- */
 .grid-equip {
 	text-align: justify;
-	
 }
 
 .grid-equip .custom-system-dynamicRow{
-   display: grid;
-   grid-template-columns: 42px auto 60px;
-   grid-template-rows: 25px auto auto;
-   width: 98%;
-   height: auto;
-   gap: 0px 2px;
-   border-bottom: 1px solid black;
+	display: grid;
+	grid-template-columns: 50px auto 80px;
+	grid-template-rows: 25px auto auto;
+   	width: 98%;
+  	height: auto;
+  	gap: 0px 2px;
+	margin-top: 5px;
+	border-width: 0 0 1px 0;
+	border-color: #404040;
+	border-style: solid;
+}
+
+.grid-equip .custom-system-dynamicRow:last-child {
+	border-width: 0 0 0 0;
+}
+
+.grid-equip .custom-system-label-root {
+	display: grid;
 }
 
 .grid-equip div{
-   font-family: 'Times New Roman', Times, serif;
-   text-align: justify;
-}
-
-.move-icn a.content-link,
-.grid-equip a.content-link,
-.trait-icn a.content-link {
-   background: none;
-   border: none;
-   font-size: 0;
+	display: grid;
+	font-family: Cambria, Times, 'Times New Roman', serif;
+	text-align: justify;
 }
 
 .grid-equip .custom-system-item-container-image {
    object-fit: contain;
-   max-width: 42px;
-   max-height: 42px;
+   max-width: 50px;
+   max-height: 50px;
    border: 1px solid black;
    border-radius: 6px;
 }
 
 .grid-equip .equip-label{
-	font-size: 1.0rem;
+	font-size: 1.2rem;
    	font-weight: bolder;
-  	margin-left: 10px;
-   	margin-top: 5px;
+  	margin-left: 15px;
    	width: auto;
 }
 
-.equip-trait{
-   width: 100%;
-   font-size: 0.85rem;
-   font-style: oblique;
-   font-weight: bold;
-}
-
-.equip-desc{
+.grid-equip .equip-type{
 	width: 100%;
+	display: flex;
+	top: 26px;
+	left: -5px;
+	align-items: baseline;
+	text-transform: capitalize;
+	font-size: 0.75rem;
+	font-weight: 600;
 }
 
-.equip-price{
-   font-size: large;
-   text-align: left;
+.grid-equip .equip-price{
+	font-size: large;
+	font-weight: 700;
+	text-align: left;
 }
 
-.equip-price::before{
-   content: '$';
+.grid-equip .equip-trait{
+	width: 100%;
+	font-size: 0.85rem;
+	font-style: oblique;
+	font-weight: 600;
+	margin-left: 22px;
 }
 
-.grid-equip .fa-trash::before{
+.grid-equip .equip-desc{
+	margin-left: 22px;
+}
+
+.grid-equip .fa-trash{
 	display:block;
-	margin-left: 50px;
-	margin-bottom: -50px;
-	
+	position: relative;
+	justify-content: baseline;
+	top: -45px;
+	margin-left: 65px;
 }
 
-/* --- Conditions --- */
-
-.cond-grid{
+/*--- Item Sheet Grid Scheme ---*/
+.grid-item-sheet{
 	display: grid;
-	grid-template-columns: 1fr 30px 30px 1fr;
-	width: 100%;
+	grid-template-columns: 25% 25% 25% 25%;
+	grid-template-rows: auto auto;
 }
 
-.cond-textfield{
+.grid-item-text{
 	grid-column: 1 / span 4;
 }
 
@@ -204,6 +332,8 @@
 }
 
 .grid-contracts div{
+	margin-right: 5px;
+	margin-left: 5px;
 	text-align: justify;
 }
 
@@ -218,8 +348,6 @@
 .grid-contracts-text{
 	grid-column: 1 / span 2;
 }
-
-
 
 /*---------------------------------------*/
 /* ROLL SCRIPT PART */
@@ -359,68 +487,18 @@
     border-radius: 3px;
 }
 
-.my-red-text{
-	color: darkred;
-	font-weight: bolder;
-}
-.my-blue-text{
-	color: royalblue;
-	font-weight: bolder;
-}
-.my-green-text{
-	color: darkolivegreen;
-	font-weight: bolder;
-}
-.my-black-text{
-	color: black;
-	font-weight: bolder;
-}
-
-.my-small-text{
-	font-size: normal;
-	text-transform: capitalize;
-}
-
-.my-medium-text{
-	font-size: large;
-	text-transform: capitalize;
-}
-
 .sheet table{
 	background: none;
 	border: none;
 }
 
-.m-1{
-	margin: 1px;
-}
-
-.mx-2{
-	margin-left: 2px;
-	margin-right: 2px;
-}
-
-.my-2{
-	margin-top: 2px;
-	margin-bottom: 2px;
+.large-text{
+	font-size: x-large;
 }
 
 .my-5{
 	margin-top: 5px;
 	margin-bottom: 5px;
-}
-
-.mx-10{
-	margin-left: 10px;
-	margin-right: 10px;
-}
-
-.my-bold{
-	font-weight: bold;
-}
-
-.center-text{
-	text-align:center;
 }
 
 .w-100{
@@ -462,7 +540,7 @@
 
 .my-deco1 {
     text-decoration: none;
-    padding-bottom: 0px;
+    margin-bottom: 10px;
     background: url(/modules/household-csb/sheet/deco1.svg);
 	background-size: 350px, auto;
 	background-repeat: no-repeat;
@@ -483,6 +561,7 @@
 .my-deco3 {
     text-decoration: none;
 	width: 250px;
+	height: 40px;
     background: url(/modules/household-csb/sheet/deco2.svg);
 	background-size: 200px, auto;
 	background-repeat: no-repeat;
@@ -520,7 +599,7 @@
 }
 
 .my-skill{
-    font-family: Times, "Times New Roman", Georgia, serif;
+	font-family: Cambria, Times, 'Times New Roman', serif;
 	font-size: small;
 	grid-column: 1 / span 2;
 	text-transform: uppercase;
@@ -529,26 +608,13 @@
 }
 
 .my-quotes{
-    font-family: Times, "Times New Roman", Georgia, serif;
+	font-family: Cambria, Times, 'Times New Roman', serif;
 	font-style: oblique;
 	font-size: medium;
 }
 
-.my-float-left{
-	margin-left: 0px;
-	padding-bottom: 0px;
-}
-
 .custom-system-field-root{
 	padding:0px;
-}
-
-.small-text{
-	font-size: small !important;
-}
-
-.large-text{
-	font-size: x-large !important;
 }
 
 .break-word{
@@ -557,13 +623,6 @@
 
 .no-break{
 	word-break: keep-all;
-}
-
-.my-bold{
-	font-family: Times, "Times New Roman", Georgia, serif;
-	font-size: 0.75rem;
-	text-transform: uppercase;
-	font-weight: 600;
 }
 
 .center-text{

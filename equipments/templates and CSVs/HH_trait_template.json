@@ -3,10 +3,10 @@
   "type": "equippableItem",
   "img": "{{image}}",
   "system": {
-    "template": "mVNOqwlB0Spi3vsr",
+    "template": "n2VeYqZQ9jw2fQZl",
     "props": {
       "name": "{{trait_name}}",
-      "trait_profession": "{{trait_profession}}",
+      "trait_type": "{{trait_type}}",
       "trait_desc": "{{trait_desc}}"
     }
  }
