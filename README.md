@@ -26,8 +26,7 @@ To import everything you need to start go to the Compendiums (1), right-click on
 ![Screenshot 2023-09-24 220247](https://github.com/mordachai/household-csb/assets/662913/3c12310d-6d29-4b2b-ba05-bdba83cddc45)
 ### (2)
 ![Screenshot 2023-09-24 220303](https://github.com/mordachai/household-csb/assets/662913/14fb8c4e-8bec-4756-a7f6-a50fa0eecc73)
-### (3)
+### (3) Right-click on the Macros folder just imported and set permission for all players as Observer
 ![Screenshot 2023-09-24 220557](https://github.com/mordachai/household-csb/assets/662913/9e920d40-6734-4780-8c8b-fd7ecfc593ab)
 
-![image](https://github.com/mordachai/household-csb/assets/662913/ae95c61e-c63e-4dc0-9335-2746b1c43aaa)
 
