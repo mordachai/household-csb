@@ -21,7 +21,7 @@ Unofficial module for the Household RPG from Two Little Mice. A beautiful game l
 
 That's it. Save it and reload and you are ready to go.
 
-To import everything you need to start go to the Compendiums (1), right-click on each one of the compendiums, and select **Import All Content**, selecting the option to **Keep Documents IDs**. (2), This will populate your game with everything you need to play. Also is important to open the folder on the hotbar and click and drag each one of the macro rolls to a slot in the macro hotbar, we will be using them to make rolls in Household RPG. Check the images below:
+To import everything you need to start go to the Compendiums (1), right-click on each one of the compendiums, and select **Import All Content**, selecting the option to **Keep Documents IDs**. (2), This will populate your game with everything you need to play. Also is important to open the folder on the hotbar, ***give Observer permission to the players for the macros*** (wight click on the macro folder to change permissions), and click and drag each one of the macro rolls to a slot in the macro hotbar, we will be using them to make rolls in Household RPG. Check the images below:
 ### (1)
 ![Screenshot 2023-09-24 220247](https://github.com/mordachai/household-csb/assets/662913/3c12310d-6d29-4b2b-ba05-bdba83cddc45)
 ### (2)
