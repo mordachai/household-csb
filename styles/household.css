@@ -7,11 +7,6 @@
   src: url('/modules/household-csb/fonts/lhf-encore-distressed.ttf');
 }
 
-.opponent-grid{
-
-}
-
-
 /*--- Sheet background, header, changes in chat fonts ---*/
 
 .sheet {
@@ -116,7 +111,6 @@
 }
 
 /* --- Clean Icon and Title in containers ---*/
-
 .grid-move a.content-link,
 .grid-equip a.content-link,
 .grid-trait a.content-link {
@@ -236,8 +230,8 @@
 
 .grid-equip .custom-system-dynamicRow{
 	display: grid;
-	grid-template-columns: 50px auto 80px;
-	grid-template-rows: 25px auto auto;
+	grid-template-columns: 40px auto 40px;
+	grid-template-rows: 20px auto auto;
    	width: 98%;
   	height: auto;
   	gap: 0px 2px;
@@ -263,55 +257,100 @@
 
 .grid-equip .custom-system-item-container-image {
    object-fit: contain;
-   max-width: 50px;
-   max-height: 50px;
+   max-width: 40px;
+   max-height: 40px;
    border: 1px solid black;
-   border-radius: 6px;
+   border-radius: 5px;
 }
 
-.grid-equip .equip-label{
-	font-size: 1.2rem;
+.equip-label{
+	font-size: 1rem;
    	font-weight: bolder;
-  	margin-left: 15px;
+  	margin-left: 10px;
    	width: auto;
 }
 
-.grid-equip .equip-type{
-	width: 100%;
+.equip-type{
 	display: flex;
-	top: 26px;
+	top: 22px;
 	left: -5px;
 	align-items: baseline;
 	text-transform: capitalize;
-	font-size: 0.75rem;
-	font-weight: 600;
+	font-size: 0.70rem;
 }
 
-.grid-equip .equip-price{
-	font-size: large;
-	font-weight: 700;
+.equip-price{
+	font-size: medium;
 	text-align: left;
 }
 
-.grid-equip .equip-trait{
+.equip-trait{
 	width: 100%;
-	font-size: 0.85rem;
+	font-size: 0.8rem;
 	font-style: oblique;
 	font-weight: 600;
-	margin-left: 22px;
+	margin-top: 3px;
+	margin-left: 12px;
 }
 
-.grid-equip .equip-desc{
-	margin-left: 22px;
+.equip-desc{
+	margin-left: 12px;
 }
 
 .grid-equip .fa-trash{
 	display:block;
 	position: relative;
 	justify-content: baseline;
-	top: -45px;
-	margin-left: 65px;
+	top: -10px;
+	margin-left: 15px;
 }
+
+.sheet .chat-icn {
+    -webkit-appearance: initial;
+    appearance: initial;
+    background: url(/modules/household-csb/sheet/send_chat.svg);
+	flex: 0 0 19px 16px;
+    width: 19px;
+    height: 16px;
+    cursor: pointer;
+}
+
+.chat-card{
+	display: grid;
+	width: 100%;
+	font-family: Cambria, Times, 'Times New Roman', serif;
+	margin-top: 10px;
+	padding: 2px;
+	border: solid 20px;
+    border-image-source: url(/modules/household-csb/sheet/deco4.svg);
+	border-image-slice: 20 20;
+}
+
+.chat-image{
+	object-fit: contain;
+	max-width: 36px;
+	max-height: 36px;
+	border: 1px solid black;
+	border-radius: 5px;
+}
+
+.chat-label{
+	font-size: 1.1rem;
+	font-weight: 700;
+	margin-bottom: 5px;
+}
+
+.chat-trait{
+	font-size: 0.85rem;
+	font-style: oblique;
+	font-weight: 600;
+	margin-bottom: 5px;
+}
+
+.chat-desc{
+	text-align: justify;
+}
+
 
 /*--- Item Sheet Grid Scheme ---*/
 .grid-item-sheet{
@@ -598,6 +637,12 @@
 	align-items: end;
 }
 
+.decorum-text{
+	font-family: Cambria, Times, 'Times New Roman', serif;
+	font-size: small;
+	text-transform: uppercase;
+}
+
 .my-skill{
 	font-family: Cambria, Times, 'Times New Roman', serif;
 	font-size: small;
@@ -623,6 +668,10 @@
 
 .no-break{
 	word-break: keep-all;
+}
+
+.no-border{
+	border: none;
 }
 
 .center-text{
@@ -657,7 +706,7 @@
 /* CHECKBOXES VOODOO PART */
 /*------------------------*/
 
-.sheet .eye input[type="checkbox"] {
+.sheet .eye-icn input[type="checkbox"] {
     -webkit-appearance: initial;
     appearance: initial;
     background: url(/modules/household-csb/sheet/eye.svg);
@@ -667,7 +716,7 @@
     cursor: pointer;
 }
 
-.sheet .eye input[type="checkbox"]:checked {
+.sheet .eye-icn input[type="checkbox"]:checked {
     background: url(/modules/household-csb/sheet/eye-slash.svg) !important;
     -webkit-filter: none !important;
 }
